@@ -1,0 +1,55 @@
+python week1/multi_provider.py
+```
+
+You'll see real latency numbers from two providers on identical prompts. Notice which is faster, which costs less, and whether quality differs. That gap in your perception of quality vs. the cost/latency data — that tension is exactly what AI PMs navigate daily.
+
+---
+
+## 60–75 min: Product Reflection
+
+**What you just built:** A provider-agnostic evaluation harness. Every portfolio project will use a version of this. When you're in an Apple interview and they ask "how would you evaluate whether to use on-device vs. cloud inference?" — you'll have run this comparison 50 times and have real intuition.
+
+**The PM connection:** Apple's Private Cloud Compute routes requests based on complexity. Simple rewrites → on-device. Complex summarization → PCC servers. The routing decision is exactly the cost/latency/quality tradeoff you're now measuring. You're not just learning this abstractly — you're instrumenting it.
+
+**Portfolio note:** Save your actual latency and cost numbers from this run. In your Project 4 (Local vs Cloud Decision Simulator), you'll build an interactive version of this comparison and you'll want real baseline data.
+
+Document in `week1/notes.md`:
+```
+Day 3 benchmarks:
+- Claude Haiku latency: X ms
+- GPT-4o-mini latency: X ms  
+- Cost per call (Haiku): $X
+- Cost per call (GPT-4o-mini): $X
+- Observation: [what you noticed about quality difference]
+
+
+============================================================
+PROMPT: Analyze this product decision: 
+    Apple is considering adding an on-device AI writing assistant to...
+============================================================
+
+▶ Anthropic Claude Haiku 4.5
+  Latency: 3528ms
+  Tokens: 64 in / 255 out
+  Cost: $0.001191
+  Output:
+  # Apple On-Device AI Writing Assistant Analysis
+
+## Top 3 Technical Constraints
+
+1. **Model Size & Memory Footprint**
+   - Must fit within iOS device RAM/storage limits while maintaining writing quality; larger models perform better but consume more resources, forcing difficult trade-offs
+
+2. **Infe
+
+▶ OpenAI GPT-4o-mini
+  Latency: 8775ms
+  Tokens: 58 in / 323 out
+  Cost: $0.000197
+  Output:
+  ### Top 3 Technical Constraints:
+
+1. **Resource Limitations**: Running a complex AI model locally on devices like iPhones and iPads requires efficient use of CPU and GPU resources. The processing power and memory capacity of mobile devices are limited compared to server infrastructure, which could r
+
+📊 Winner on speed: Anthropic Claude Haiku 4.5 (3528ms)
+💰 Winner on cost: OpenAI GPT-4o-mini ($0.000197)

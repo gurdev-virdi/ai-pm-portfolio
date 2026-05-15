@@ -1,0 +1,15 @@
+📝 Prompt: What is RAG (Retrieval-Augmented Generation)?
+
+Response: RAG (Retrieval-Augmented Generation) is a type of text generation model that combines the strengths of two existing techniques: retrieval-based genera...
+⏱️  Latency: 12190.0ms
+
+📝 Prompt: Explain embeddings in 1 sentence.
+Response: Embeddings are a way of representing words, phrases, or documents as mathematical vectors in a high-dimensional space, allowing machine learning model...
+⏱️  Latency: 789.9ms
+
+📝 Prompt: Why would Apple use local LLMs?
+
+Response: Apple may consider using local language models (LLMs) for various reasons:
+
+1. Language support: By training LLMs locally, Apple can tailor the models...
+⏱️  Latency: 7559.3ms

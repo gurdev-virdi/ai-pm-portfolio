@@ -1,0 +1,7 @@
+Today's question (Week 1, foundational):
+
+"You're a PM at Apple working on a new AI feature. How do you decide whether to run inference on-device vs. in the cloud?"
+
+My Answer:
+
+Deciding where to run inference requires a combination of a few key inputs such as company context, user tolerance for latency against result quality, privacy requirements, and connectivity assumptions. For a company such as Apple, running on-device is the default since privacy is a brand principle. Users are generally more latency sensitive for low-level tasks lke rewriting or getting simple questions answered using text input. Multi-modal capabilities or those which are more complex such as coding better lend themselves to cloud compute. Privacy is critical for sensitive information such as financial, legal, health, and personal data. For Apple, the philosophy is to return responses within 100ms and leverage on-device hardware such as the Neural Engine and integrated GPUs for quick responses. I'd route more complex, and less sensitive requests to Private Cloud Compute where we can leverage larger models and GPU infrastructure to improve result quality, assuming the user is okay with incremental latency. Local options may return responses within 100-500ms, versus 2500-4000ms for those on Private Cloud Compute. 
