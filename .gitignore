@@ -6,3 +6,6 @@ __pycache__/
 
 # Local-only (not pushed)
 practice_questions/
+
+# Cursor / Claude tooling
+.claude/
