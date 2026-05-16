@@ -45,7 +45,7 @@ ai-pm-portfolio/
 │   │   ├── chunking_compare.py     # Fixed vs recursive chunk strategies
 │   │   └── mini_rag.py             # Complete RAG pipeline (~80 lines)
 │   ├── day2/                       # Retrieval evaluation
-│   │   └── retreival_eval.py       # Hit rate + MRR across test queries
+│   │   └── retrieval_eval.py       # Hit rate + MRR across test queries
 │   ├── day3-context-windows/       # Long-context cost & memory strategies
 │   │   ├── memory_strategies.py    # Summarization, sliding window, hierarchical
 │   │   └── cost_calculator.py      # Monthly/annual cost projections at scale
