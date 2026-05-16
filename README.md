@@ -134,7 +134,6 @@ For local inference setup, see [`day4-prompt-engineering/instructions.md`](day4-
 
 Work through the weeks sequentially — each builds on the prior one. Within each week, the numbered days follow a progression from concept to implementation to evaluation.
 
-- **Interview prep:** `practice_questions/` has PM decision scenarios with worked trade-off analyses
 - **Reusable prompts:** `prompt_library/` includes an eval suite generator you can drop into any feature
 - **Quick reference:** each week's `.md` files contain the actual benchmark output so you can read results without re-running code
 
